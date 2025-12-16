@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images2/ShopScan.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.gideon_ushindi.ShopScan"
     },
     "web": {
       "output": "static",
@@ -44,6 +45,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "9577a63d-3b92-43a9-bec4-48bf87a55143"
+      }
+    },
+    "owner": "gideon_ushindi"
   }
 }
