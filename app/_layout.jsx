@@ -20,6 +20,10 @@ export default function RootLayout() {
     }}>
     <Stack.Screen name="index"options={{title:"Welcome", headerShown:false}}  />
     <Stack.Screen name="notifications"options={{title:"Notifications"}}  />
+    <Stack.Screen name="signin"options={{title:"Sign in"}}  />
+    <Stack.Screen name="signup"options={{title:"Sign up"}}  />
+    <Stack.Screen name="forgotpassword"options={{title:"Forgot password"}}  />
+
     
   </Stack>
   )
