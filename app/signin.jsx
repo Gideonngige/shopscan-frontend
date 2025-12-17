@@ -1,5 +1,6 @@
 import { router } from "expo-router";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
+import '../global.css';
 
 export default function SignInScreen() {
   return (
