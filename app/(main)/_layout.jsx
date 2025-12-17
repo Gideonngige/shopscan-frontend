@@ -32,6 +32,12 @@ export default function TabsLayout() {
           else if (route.name === 'products') {
             iconName = 'cube-outline';
           }
+          else if (route.name === 'dashboard') {
+            iconName = 'grid';
+          }
+          else if (route.name === 'scan') {
+            iconName = 'scan-outline';
+          }
 
           return <MaterialCommunityIcons name={iconName} size={size} color={color} />;
         },
@@ -42,6 +48,8 @@ export default function TabsLayout() {
       <Tabs.Screen name="home" options={{ title: "Home"}} />
       <Tabs.Screen name="products" options={{ title: "Products"}} />
       <Tabs.Screen name="addproduct" options={{ href: null, title: "Add Product"}} />
+      <Tabs.Screen name="dashboard" options={{ title: "Dashboard"}} />
+      <Tabs.Screen name="scan" options={{ title: "Scan"}} />
 
       
       
