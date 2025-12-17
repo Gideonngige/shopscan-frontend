@@ -49,7 +49,7 @@ export default function SignInScreen() {
         </TouchableOpacity>
 
         {/* Sign In Button */}
-        <TouchableOpacity className="bg-blue-600 py-4 rounded-xl items-center shadow">
+        <TouchableOpacity className="bg-blue-600 py-4 rounded-xl items-center shadow" onPress={() => router.push("/home")}>
           <Text className="text-white font-bold text-lg">
             Sign In
           </Text>

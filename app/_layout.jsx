@@ -24,6 +24,8 @@ export default function RootLayout() {
     <Stack.Screen name="signup"options={{title:"Sign up"}}  />
     <Stack.Screen name="forgotpassword"options={{title:"Forgot password"}}  />
 
+    <Stack.Screen name="(main)" options={{ headerShown: false }} />
+
     
   </Stack>
   )
