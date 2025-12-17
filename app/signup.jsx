@@ -1,5 +1,5 @@
 import { router } from "expo-router";
-import { ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
 import '../global.css';
 
 export default function SignUpScreen() {
@@ -13,8 +13,12 @@ export default function SignUpScreen() {
 
         {/* Header */}
         <View className="items-center mt-16 mb-10">
-          <View className="w-20 h-20 rounded-2xl bg-blue-600 items-center justify-center mb-4">
-            <Text className="text-white text-3xl font-bold">SS</Text>
+          <View className="w-24 h-24 rounded-2xl bg-white items-center justify-center mb-4">
+            <Image
+              source={require("../assets/images2/ShopScan.png")}
+              className="w-40 h-40"
+              resizeMode="contain"
+            />
           </View>
           <Text className="text-2xl font-bold text-gray-900">
             Create your account
@@ -72,7 +76,7 @@ export default function SignUpScreen() {
         </TouchableOpacity>
 
         {/* Sign In Redirect */}
-        <View className="flex-row justify-center mt-6">
+        <View className="flex-row justify-center mt-6 mb-8">
           <Text className="text-gray-600">
             Already have an account?
           </Text>

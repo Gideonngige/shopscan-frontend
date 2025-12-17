@@ -1,24 +1,29 @@
 import { router } from "expo-router";
-import { Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
 import '../global.css';
 
 export default function SignInScreen() {
   return (
     
-      <View className="flex-1 px-6 justify-center">
+      <View className="flex-1 px-6 justify-center bg-white">
 
         {/* Logo / App Name */}
         <View className="items-center mb-10">
-          <View className="w-20 h-20 rounded-2xl bg-blue-600 items-center justify-center mb-4">
-            <Text className="text-white text-3xl font-bold">SS</Text>
-          </View>
-          <Text className="text-2xl font-bold text-gray-900">
-            Welcome to ShopScan
-          </Text>
-          <Text className="text-gray-500 mt-1">
-            Scan smarter. Shop better.
-          </Text>
-        </View>
+  <View className="w-24 h-24 rounded-2xl bg-white items-center justify-center mb-4 overflow-hidden">
+    <Image
+      source={require("../assets/images2/ShopScan.png")}
+      className="w-40 h-40"
+      resizeMode="contain"
+    />
+  </View>
+
+  <Text className="text-2xl font-bold text-gray-900">
+    Welcome to ShopScan
+  </Text>
+  <Text className="text-gray-500 mt-1">
+    Scan smarter. Shop better.
+  </Text>
+</View>
 
         {/* Email */}
         <View className="mb-4">
@@ -70,7 +75,7 @@ export default function SignInScreen() {
         </TouchableOpacity>
 
         {/* Sign Up */}
-        <View className="flex-row justify-center mt-6">
+        <View className="flex-row justify-center mt-6 mb-8">
           <Text className="text-gray-600">
             Don’t have an account?
           </Text>

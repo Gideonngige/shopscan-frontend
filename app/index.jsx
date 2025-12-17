@@ -1,5 +1,5 @@
 import { router } from "expo-router";
-import { ScrollView, StatusBar, Text, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, StatusBar, Text, TouchableOpacity, View } from "react-native";
 import '../global.css';
 
 export default function Index() {
@@ -14,8 +14,12 @@ export default function Index() {
         {/* Top Section */}
         <View className="mt-16 mb-12">
           {/* Logo */}
-          <View className="w-24 h-24 bg-blue-600 rounded-3xl items-center justify-center mb-6">
-            <Text className="text-white text-4xl font-extrabold">SS</Text>
+          <View className="w-24 h-24 bg-white rounded-3xl items-center justify-center mb-6">
+            <Image
+              source={require("../assets/images2/ShopScan.png")}
+              className="w-40 h-40"
+              resizeMode="contain"
+            />
           </View>
 
           {/* Headline */}
