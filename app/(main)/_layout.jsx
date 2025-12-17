@@ -41,6 +41,7 @@ export default function TabsLayout() {
     >
       <Tabs.Screen name="home" options={{ title: "Home"}} />
       <Tabs.Screen name="products" options={{ title: "Products"}} />
+      <Tabs.Screen name="addproduct" options={{ href: null, title: "Add Product"}} />
 
       
       

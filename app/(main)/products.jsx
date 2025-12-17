@@ -1,4 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 import { ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
 import '../../global.css';
 
@@ -25,7 +26,7 @@ export default function Products() {
           </View>
 
           {/* Add Product */}
-          <TouchableOpacity className="bg-blue-600 w-14 h-14 rounded-2xl items-center justify-center shadow">
+          <TouchableOpacity className="bg-blue-600 w-14 h-14 rounded-2xl items-center justify-center shadow" onPress={() => router.push('/addproduct')}>
             <Ionicons name="add" size={26} color="white" />
           </TouchableOpacity>
 
