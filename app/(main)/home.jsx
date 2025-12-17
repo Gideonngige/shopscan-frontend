@@ -1,5 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import '../../global.css';
 
 export default function HomeScreen() {
   return (
@@ -46,10 +48,10 @@ export default function HomeScreen() {
         {/* Action Buttons */}
         <View className="flex-row justify-between mb-12">
 
-          <ActionButton icon="scan-outline" label="Scan" />
-          <ActionButton icon="add-circle-outline" label="Add Stock" />
-          <ActionButton icon="cube-outline" label="Add Product" />
-          <ActionButton icon="grid-outline" label="Dashboard" />
+          <ActionButton icon="scan-outline" label="Scan" link="scan" />
+          <ActionButton icon="add-circle-outline" label="Add Stock" link="stocks" />
+          <ActionButton icon="cube-outline" label="Add Product" link="products" />
+          <ActionButton icon="grid-outline" label="Dashboard" link="dashboard" />
 
         </View>
 
@@ -76,9 +78,9 @@ export default function HomeScreen() {
 
 /* ---------- Components ---------- */
 
-function ActionButton({ icon, label }) {
+function ActionButton({ icon, label, link }) {
   return (
-    <TouchableOpacity className="items-center">
+    <TouchableOpacity className="items-center" onPress={() => router.push(`/${link}`)}>
       <View className="w-16 h-16 bg-white rounded-full items-center justify-center shadow mb-2">
         <Ionicons name={icon} size={24} color="#2563eb" />
       </View>
